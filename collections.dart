@@ -9,6 +9,18 @@ void main() {
   print("Updated Fruits: $fruits");
   fruits.insert(2, "Mango");
   print("Fruits after insertion: $fruits");
+  fruits[1] = "Blueberry";
+  print("Fruits after update: $fruits");
+  fruits.remove("Cherry");
+  print("Fruits after removal: $fruits");
+  fruits.replaceRange(1, 4, ["Kiwi", "Lemon", "Mango"]);
+  print("Fruits after replacement: $fruits");
+  fruits.removeLast();
+  print("Fruits after removing last: $fruits");
+  print("Length of Fruits list: ${fruits.length}");
+  print(  "Is Fruits list empty? ${fruits.isEmpty}");
+  print(  "Is Fruits list not empty? ${fruits.isNotEmpty}");
+  print("reverse Fruits list: ${fruits.reversed}");
 
   // Set
   Set<int> numbers = {1, 2, 3, 4, 5};
